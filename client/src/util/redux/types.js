@@ -1,0 +1,17 @@
+export const HANDLE_INPUT = 'HANDLE_INPUT'
+export const LOGOUT = ' LOGOUT'
+export const LOGIN = 'LOGIN'
+export const MESSAGE = 'MESSAGE'
+
+export const HANDLE_CART_INPUT = 'HANDLE_CART_INPUT'
+export const ADDTOCART = 'ADDTOCART'
+export const TOTALPRICE ='TOTALPRICE'
+export const CLEARCART = 'CLEARCART'
+export const REMOVEFROMCART= 'REMOVEFROMCART'
+export const INFO= 'INFO'
+export const ADDRESS= 'ADDRESS'
+
+export const HANDLE_ITEM_INPUT = 'HANDLE_ITEM_INPUT'
+export const EDIT_ITEM = 'EDIT_ITEM'
+export const FOR_SALE = 'FOR_SALE'
+export const CLEAR_INPUT = 'CLEAR_INPUT'

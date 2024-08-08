@@ -1,0 +1,71 @@
+@import './assets/css-libs/animate.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  margin: 50px 0;
+}
+
+.hr2::after {
+  background: burlywood;
+  content: 'or';
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+.contact{
+  text-align: center;
+font-weight: bold;
+color: burlywood;
+}
+.footer{
+  margin: 10px 0;
+}
+.cm-input{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 400px;
+  margin: auto;
+  font-size: 40px;
+}
+.cm-button{
+  margin-bottom: 15px;
+}
+
+#sign{
+  width: 100%;
+  margin-top: 30px;
+  max-width: 800px;
+}
+.center{
+    text-align: center;
+}
+
+.cartModal{
+  background-color: #f2f2f2;
+  position: fixed;
+  top:0%;
+  right:0px;
+
+}
+#closeCart{
+text-align: right;
+}
+ul{
+  margin-top: 5px;
+}
+#trash:hover{
+  cursor: grab;
+}
+

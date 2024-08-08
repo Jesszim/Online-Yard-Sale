@@ -1,0 +1,391 @@
+
+
+.background {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: url('./assets/images/grass.jpg');
+    background-size: cover;
+}
+/* form  */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-title {
+    margin: 25px 0;
+}
+
+.form-label {
+    font-size: 20px;
+    width: 100%;
+}
+
+.form-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    flex: 1;
+    width: 100%;
+}
+
+.form-button {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    max-width: 250px;
+    width: 75%;
+    box-shadow: 0px 0px 10px 0px #ccc;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.form-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.form-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+}
+
+.form-footer-container>p {
+    margin-top: 20px;
+    color: #666666
+}
+
+.toggle {
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.toggle:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.high-rule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.high-rule-container hr {
+    width: 100%;
+}
+
+.high-rule-container p {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    border: 2px solid #ccc;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    color: #666666
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 450px;
+    min-height: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px black;
+}
+/* login/register  */
+.login-input-container {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 20px;
+}
+
+.registration-input-container {
+    display: grid;
+    place-items: center;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "first"
+        "last"
+        "email"
+        "username"
+        "password"
+        "confirm";
+    padding: 0 20px;
+}
+
+.registration-input-container>label[for="firstName"] {
+    grid-area: first;
+}
+
+.registration-input-container>label[for="lastName"] {
+    grid-area: last;
+}
+
+.registration-input-container>label[for="email"] {
+    grid-area: email;
+}
+
+.registration-input-container>label[for="username"] {
+    grid-area: username;
+}
+
+.registration-input-container>label[for="password"] {
+    grid-area: password;
+}
+
+.registration-input-container>label[for="confirmPassword"] {
+    grid-area: confirm;
+}
+
+@media screen and (min-width: 500px) {
+    .registration-input-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "first last"
+            "email email"
+            "username username"
+            "password password"
+            "confirm confirm";
+    }
+}
+
+.sign-in-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+/* home  */
+.home {
+    margin: 0 100px;
+}
+/* navbar */
+.logbtn {
+    background-color: brown;
+    color: burlywood;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.logbtn:hover {
+    transform: scale(1.2);
+}
+
+.link {
+    margin: 50px 50px;
+    color: burlywood;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: bradley hand itc;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px;
+    background-color: darkgreen;
+}
+.developed{
+color: black;
+font-size: 16px;
+    position: absolute;
+}
+/* items */
+.itemCard {
+    width: 220px;
+    height: fit-content;
+    margin: 15px;
+    padding: 10px;
+    background: url('./assets/images/box.jpg');
+}
+.edit{
+    position: fixed;
+    box-shadow: 7px 7px 5px #45a049,  -7px -7px 5px #45a049;
+}
+
+.cardImg {
+    width: 200px;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 10%;
+    justify-content: space-evenly;
+}
+#searchInput{
+        width: 300px;
+    height: 30px;
+}
+/* Cart */
+#cartList{
+margin-bottom: 10px;
+} 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .col-25 {
+    flex: 30%;
+  }
+  
+  .col-50 {
+    flex: 50%;
+  }
+  
+  .col-75 {
+    flex: 65%;
+  }
+  
+  .col-25,
+
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 10px 15px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input {
+    width: 85%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+  }
+  
+  .btn {
+    background-color: green;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  span.price {
+    float: right;
+    color: green;
+    margin-left: 10px;
+  }
+  #confirmCard{
+      position: fixed;
+      top: 50vh;
+      left: 250px;
+      background-color: burlywood;
+      padding: 20px;
+  }
+  #confirmBtns{
+      display: flex;
+      justify-content: space-evenly;
+     
+  }
+  .buyBtn{
+      padding: 5px; font-size: 20px;
+  }
+  .redBtn{
+      background-color: red;
+  }
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+#checkout{
+    text-align: center;
+    margin-top: 50px;
+}
+#checked{
+    width: 50px !important;
+}
+.hr3{
+    margin:  0 !important;
+}
+/* Spinner */
+.spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 4px solid green;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border-left-color: brown;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
